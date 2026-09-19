@@ -1,0 +1,43 @@
+[
+  {
+    "type": "text",
+    "label": "General settings for Alt-click Split View",
+    "margin": "20px 0 12px 0",
+    "size": "16px"
+  },
+  {
+    "type": "text",
+    "label": "Open links beside the current tab with the selected trigger.",
+    "size": "14px"
+  },
+  {
+    "property": "uc.alt-click-split-view.enabled",
+    "label": "Enable Alt-click Split View",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
+    "property": "uc.alt-click-split-view.trigger",
+    "label": "Trigger method",
+    "type": "dropdown",
+    "defaultValue": "alt",
+    "options": [
+      {
+        "label": "Ctrl + Click",
+        "value": "ctrl"
+      },
+      {
+        "label": "Alt + Click",
+        "value": "alt"
+      },
+      {
+        "label": "Shift + Click",
+        "value": "shift"
+      },
+      {
+        "label": "Meta (Command) + Click",
+        "value": "meta"
+      }
+    ]
+  }
+]
