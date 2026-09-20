@@ -2,9 +2,9 @@
 
 Follow a link without losing your place. Hold **Alt** and click a link to open it beside the page you are reading.
 
-![Alt-click opens a reference beside the original reading page in Zen Split View](marketplace-preview.png)
+![Choose your modifier-click shortcut in a native Zen settings card](marketplace-preview.png)
 
-*Actual Zen 1.22.2b screenshot with local demonstration pages. The gesture label is part of the demo page, not an overlay added by the mod.*
+*Illustration of the added settings: an enable switch and a choice of click modifier. Marketplace preview: 600 × 400 pixels.*
 
 - Compare an article with its sources or documentation with an example.
 - Choose Alt, Ctrl, Shift, or Command as your modifier.
