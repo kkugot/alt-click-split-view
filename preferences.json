@@ -18,7 +18,7 @@
   },
   {
     "property": "uc.alt-click-split-view.focus-on-hover",
-    "label": "Focus split pane on hover",
+    "label": "Switch split panes when you move the mouse cursor",
     "type": "checkbox",
     "defaultValue": false
   },

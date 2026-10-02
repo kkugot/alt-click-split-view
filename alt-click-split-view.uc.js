@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Alt-click Split View
 // @author         Kostiantyn Kugot
-// @version        1.4.0
+// @version        1.4.1
 // @description    Open Alt-clicked links in Zen Split View.
 // @include        chrome://browser/content/browser.xhtml
 // ==/UserScript==

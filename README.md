@@ -2,7 +2,7 @@
 
 Follow a link without losing your place. Hold **Alt** and click a link to open it beside the page you are reading.
 
-Enable **Focus split pane on hover** in Sine or Zen's Tabs and browsing settings to activate the pane under your pointer after 150ms, without clicking. It is disabled by default and works independently of the modifier-click switch. URL editing, open menus, Glance, dragging and inactive windows suspend hover activation. Disable the equivalent Blended Addressbar option if using both mods to avoid duplicate hover handlers.
+Enable **Switch split panes when you move the mouse cursor** in Sine or Zen's Tabs and browsing settings to activate the pane under your pointer after 150ms, without clicking. It is disabled by default and works independently of the modifier-click switch. URL editing, open menus, Glance, dragging and inactive windows pause this behavior.
 
 ![Choose your modifier-click shortcut in a native Zen settings card](marketplace-preview.png)
 

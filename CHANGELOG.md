@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.1 · 2026-10-02
+
+- Describe the setting as Switch split panes when you move the mouse cursor, in both settings locations and the marketplace preview.
+
 ## 1.4.0 · 2026-10-02
 
 - Add optional Focus split pane on hover in both Sine and Zen settings, disabled by default. Select a pane after 150ms; suspend during URL editing, open menus, Glance, dragging, and inactive windows.

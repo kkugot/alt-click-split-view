@@ -1,4 +1,4 @@
-// Alt-click Split View settings · Kostiantyn Kugot · 1.4.0
+// Alt-click Split View settings · Kostiantyn Kugot · 1.4.1
 (() => {
   window.SplitLinkSettings?.destroy();
   const enabledPref = 'uc.alt-click-split-view.enabled';
@@ -72,7 +72,7 @@
       hover.type = 'checkbox';
       hover.id = 'split-link-hover';
       hover.addEventListener('change', () => Services.prefs.setBoolPref(hoverPref, hover.checked));
-      hoverLabel.append(hover, ' Focus split pane on hover');
+      hoverLabel.append(hover, ' Switch split panes when you move the mouse cursor');
       fieldset.append(toggleLabel, row, hoverLabel, error);
       card.append(fieldset);
       section.append(card);
