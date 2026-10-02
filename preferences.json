@@ -17,6 +17,12 @@
     "defaultValue": true
   },
   {
+    "property": "uc.alt-click-split-view.focus-on-hover",
+    "label": "Focus split pane on hover",
+    "type": "checkbox",
+    "defaultValue": false
+  },
+  {
     "property": "uc.alt-click-split-view.trigger",
     "label": "Trigger method",
     "type": "dropdown",

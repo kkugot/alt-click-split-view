@@ -1,17 +1,19 @@
-// Alt-click Split View settings · Kostiantyn Kugot · 1.3.0
+// Alt-click Split View settings · Kostiantyn Kugot · 1.4.0
 (() => {
   window.SplitLinkSettings?.destroy();
   const enabledPref = 'uc.alt-click-split-view.enabled';
   const triggerPref = 'uc.alt-click-split-view.trigger';
+  const hoverPref = 'uc.alt-click-split-view.focus-on-hover';
   const glanceEnabledPref = 'zen.glance.enabled';
   const glanceTriggerPref = 'zen.glance.activation-method';
-  const observedPrefs = [enabledPref, triggerPref, glanceEnabledPref, glanceTriggerPref];
+  const observedPrefs = [enabledPref, triggerPref, hoverPref, glanceEnabledPref, glanceTriggerPref];
   const html = (tag) => document.createElementNS('http://www.w3.org/1999/xhtml', tag);
-  let section, enabled, trigger, error;
+  let section, enabled, trigger, error, hover;
 
   function refresh() {
     if (!section) return;
     enabled.checked = Services.prefs.getBoolPref(enabledPref, true);
+    hover.checked = Services.prefs.getBoolPref(hoverPref, false);
     trigger.value = Services.prefs.getStringPref(triggerPref, 'alt');
     trigger.disabled = !enabled.checked;
     const conflict = enabled.checked && Services.prefs.getBoolPref(glanceEnabledPref, true) &&
@@ -65,7 +67,13 @@
       error.setAttribute('role', 'alert');
       error.setAttribute('aria-live', 'polite');
       trigger.setAttribute('aria-describedby', error.id);
-      fieldset.append(toggleLabel, row, error);
+      const hoverLabel = html('label');
+      hover = html('input');
+      hover.type = 'checkbox';
+      hover.id = 'split-link-hover';
+      hover.addEventListener('change', () => Services.prefs.setBoolPref(hoverPref, hover.checked));
+      hoverLabel.append(hover, ' Focus split pane on hover');
+      fieldset.append(toggleLabel, row, hoverLabel, error);
       card.append(fieldset);
       section.append(card);
       enabled.addEventListener('change', () => Services.prefs.setBoolPref(enabledPref, enabled.checked));

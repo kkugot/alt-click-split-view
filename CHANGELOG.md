@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.0 · 2026-10-02
+
+- Add optional Focus split pane on hover in both Sine and Zen settings, disabled by default. Select a pane after 150ms; suspend during URL editing, open menus, Glance, dragging, and inactive windows.
+
 ## 1.3.0 · 2026-09-20
 
 - Show a live Glance shortcut-conflict error in Tabs and browsing and suspend Split View interception until the conflict is resolved.
