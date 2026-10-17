@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.2 · 2026-10-17
+
+- Show Option + Click on macOS in Zen and Sine settings; retain Alt + Click on Windows and Linux. The stored modifier and click behavior are unchanged.
+
 ## 1.4.1 · 2026-10-02
 
 - Describe the setting as Switch split panes when you move the mouse cursor, in both settings locations and the marketplace preview.

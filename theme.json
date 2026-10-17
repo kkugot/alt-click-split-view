@@ -3,9 +3,9 @@
   "name": "Alt-click Split View",
   "description": "Open Alt-clicked links in Zen Split View.",
   "author": "Kostiantyn Kugot",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "ai": "yes",
-  "updatedAt": "2026-10-02",
+  "updatedAt": "2026-10-17",
   "tags": [
     "split-view",
     "links",

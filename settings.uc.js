@@ -1,4 +1,4 @@
-// Alt-click Split View settings · Kostiantyn Kugot · 1.4.1
+// Alt-click Split View settings · Kostiantyn Kugot · 1.4.2
 (() => {
   window.SplitLinkSettings?.destroy();
   const enabledPref = 'uc.alt-click-split-view.enabled';
@@ -52,7 +52,8 @@
       triggerLabel.htmlFor = 'split-link-trigger';
       trigger = html('select');
       trigger.id = 'split-link-trigger';
-      for (const [value, label] of [['ctrl', 'Ctrl'], ['alt', 'Alt'], ['shift', 'Shift'], ['meta', 'Meta (Command)']]) {
+      const altLabel = Services.appinfo.OS === 'Darwin' ? 'Option' : 'Alt';
+      for (const [value, label] of [['ctrl', 'Ctrl'], ['alt', altLabel], ['shift', 'Shift'], ['meta', 'Meta (Command)']]) {
         const option = html('option');
         option.value = value;
         option.textContent = label + ' + Click';

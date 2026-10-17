@@ -44,6 +44,37 @@
         "label": "Meta (Command) + Click",
         "value": "meta"
       }
+    ],
+    "disabledOn": [
+      "mac"
+    ]
+  },
+  {
+    "property": "uc.alt-click-split-view.trigger",
+    "label": "Trigger method",
+    "type": "dropdown",
+    "defaultValue": "alt",
+    "options": [
+      {
+        "label": "Ctrl + Click",
+        "value": "ctrl"
+      },
+      {
+        "label": "Option + Click",
+        "value": "alt"
+      },
+      {
+        "label": "Shift + Click",
+        "value": "shift"
+      },
+      {
+        "label": "Meta (Command) + Click",
+        "value": "meta"
+      }
+    ],
+    "disabledOn": [
+      "win",
+      "lin"
     ]
   }
 ]
