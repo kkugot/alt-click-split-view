@@ -22,6 +22,8 @@ Open the mod's settings in Sine to disable the behavior or choose Ctrl + Click, 
 
 ## Install with Sine
 
+New to [Sine](https://github.com/CosmoCreeper/Sine)? Follow the [official installation guide](https://github.com/sineorg/docs/blob/main/src/installation.md) to install it in Zen, then restart the browser. Sine adds a **Sine Mods** section to browser settings where you can install and configure mods.
+
 Add `kkugot/alt-click-split-view` through Sine's custom repository installation and enable the JavaScript when prompted. For a local or custom repository install, turn on Sine's **Enable installing JS from unofficial sources** setting (`sine.allow-unsafe-js`). Requires Sine with chrome script support. Runtime checked on Zen 1.22.1b and 1.22.2b on macOS. Store availability depends on Sine maintainer review.
 
 If Glance already uses Alt + Click, choose a different modifier for one of the two features. The mod does not change Glance's settings automatically.
